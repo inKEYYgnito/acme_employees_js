@@ -37,7 +37,6 @@ const findManagementChainForEmployee = (employee, employeeList, chain = []) => {
 }
 
 const generateManagementTree = (employeeList) => {
-
     const getReports = (employee) => {
         const reports = employeeList.filter(e => e.managerId === employee.id);
         return reports.map(report => {
